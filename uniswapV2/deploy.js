@@ -1,12 +1,12 @@
 import Web3 from 'web3';
 import fs from 'fs';
 
-const rpc = 'http://localhost:8545';
+const rpc = 'HTTP://127.0.0.1:8545'; //'http://localhost:8545';
 
 const WETH9 = JSON.parse(fs.readFileSync('../WETH9.json', 'utf-8'));
-const factoryArtifact = JSON.parse(fs.readFileSync('../contract/build/contracts/UniswapV2Factory.json', 'utf-8'));
-const routerArtifact = JSON.parse(fs.readFileSync('../contract/build/contracts/UniswapV2Router02.json', 'utf-8'));
-const pairArtifact = JSON.parse(fs.readFileSync('../contract/build/contracts/IUniswapV2Pair.json', 'utf-8'))
+// const factoryArtifact = JSON.parse(fs.readFileSync('../contract/build/contracts/UniswapV2Factory.json', 'utf-8'));
+// const routerArtifact = JSON.parse(fs.readFileSync('../contract/build/contracts/UniswapV2Router02.json', 'utf-8'));
+// const pairArtifact = JSON.parse(fs.readFileSync('../contract/build/contracts/IUniswapV2Pair.json', 'utf-8'))
 const erc20Artifact = JSON.parse(fs.readFileSync('../contract/build/contracts/myERC20.json', 'utf-8'));
 
 import factoryV3Artifact from'@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json' assert { type: "json" };
